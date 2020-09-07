@@ -1,15 +1,10 @@
 "use strict";
-// window.addEventListener("load", start);
 
-// function start() {}
-
-let colorWell;
-
-window.addEventListener("load", start, false);
+window.addEventListener("load", start);
 
 function start() {
-  colorWell = document.querySelector("#selector");
-  colorWell.addEventListener("input", getHex, false);
+  let colorWell = document.querySelector("#selector");
+  colorWell.addEventListener("input", getHex);
 }
 function getHex(event) {
   const viewer = document.querySelector("#viewer");
